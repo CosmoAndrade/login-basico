@@ -14,16 +14,14 @@ export function AuthProvider({ children }) {
 
 
 
-
-
     return (
         <AuthContext.Provider value={{
             
             username,
             password,
             logged,
-            setLogged
-
+            setLogged,
+           
         }}>
             {children}
         </AuthContext.Provider>
