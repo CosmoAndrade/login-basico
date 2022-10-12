@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
+import { Container } from './login';
 
 function Login() {
 
@@ -31,21 +32,27 @@ function Login() {
 
     return (
         <div>
-            <h1>Login</h1>
+            <h1 style={{textAlign: 'center', marginBottom: '25px'}}>Login</h1>
 
-            <input type="text"
-                value={user}
-                onChange={e => setUser(e.target.value)}
-            />
+            <Container>
 
-            <input type="password"
-                value={pass}
-                onChange={e => setPass(e.target.value)}
-            />
+                <input type="text"
+                    value={user}
+                    onChange={e => setUser(e.target.value)}
+                />
 
-            <button
-                onClick={handleLogin}
-            >Entrar</button>
+                <input type="password"
+                    value={pass}
+                    onChange={e => setPass(e.target.value)}
+                />
+
+                <button
+                    onClick={handleLogin}
+                >Entrar</button>
+
+            </Container>
+
+
 
 
 

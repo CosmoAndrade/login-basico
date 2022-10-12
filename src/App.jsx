@@ -1,5 +1,6 @@
 import { AuthProvider } from "./contexts/auth"
 import Rotas from "./routes"
+import GlobalStyle from "./styles/globalStyles"
 
 
 function App() {
@@ -8,6 +9,8 @@ function App() {
     <>
 
       <AuthProvider>
+
+        <GlobalStyle/>
 
         <Rotas />
 

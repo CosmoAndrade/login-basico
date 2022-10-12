@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
+import { Header } from './menu';
 
 function Menu() {
     const navigator = useNavigate()
@@ -16,7 +17,7 @@ function Menu() {
     }
 
     return ( 
-        <div>
+        <Header>
             <h1>Logo</h1>
 
             <nav>
@@ -31,7 +32,7 @@ function Menu() {
                       </ul>
                 </ul>
             </nav>
-        </div>
+        </Header>
      );
 }
 
